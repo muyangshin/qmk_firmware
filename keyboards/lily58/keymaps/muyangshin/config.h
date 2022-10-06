@@ -38,6 +38,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define RGBLIGHT_VAL_STEP 17
 
 #define GRAVE_ESC_CTRL_OVERRIDE
+#define TAPPING_TOGGLE 3
 
 // Underglow
 /*
