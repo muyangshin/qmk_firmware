@@ -35,10 +35,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,-----------------------------------------.                    ,-----------------------------------------.
  * | F1   | F2   | F3   | F4   | F5   | F6   |                    |  F7  | F8   |  F9  | F10  | F11  | F12  |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
- * |      |  home|   end|pgup  |pgdwn |      |                    |      |      |      |      |      |      |
+ * |      |  home|   end|pgup  |pgdwn |      |                    |   [  |   ]  |   {  |   }  |   \  |   |  |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
  * |   `  | Left | Down |  Up  | Right|   %  |-------.    ,-------|   ^  |   &  |   *  |   (  |   )  |   -  |
- * |------+------+------+------+------+------|   \   |    |    |  |------+------+------+------+------+------|
+ * |------+------+------+------+------+------|       |    |       |------+------+------+------+------+------|
  * |      |      |      |  lock|      |      |-------|    |-------|      |   _  |   +  |   {  |   }  |   |  |
  * `-----------------------------------------/       /     \      \-----------------------------------------'
  *                   | LAlt | LGUI |LOWER | /Space  /       \Enter \  |RAISE |DEL   | RGUI |
@@ -47,9 +47,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 [_LOWER] = LAYOUT(
   KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,                      KC_F7,   KC_F8,   KC_F9,  KC_F10,  KC_F11,  KC_F12,
-  _______,  KC_HOME, KC_END,  KC_PAGE_UP, KC_PAGE_DOWN, _______,           _______, _______, _______, _______, _______, _______,
+  _______,  KC_HOME, KC_END,  KC_PAGE_UP, KC_PAGE_DOWN, _______,           KC_LBRC, KC_RBRC, KC_LCBR, KC_RCBR, KC_BSLS, KC_PIPE,
   KC_GRV, KC_LEFT, KC_DOWN,   KC_UP, KC_RGHT,  KC_PERC,                   KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, KC_TILD,
-  _______, _______, _______, KC_LOCK, _______, _______, KC_BSLS, KC_PIPE, XXXXXXX, KC_UNDS, KC_PLUS, KC_LCBR, KC_RCBR, KC_PIPE,
+  _______, _______, _______, KC_LOCK, _______, _______, _______, _______, XXXXXXX, KC_UNDS, KC_PLUS, KC_LCBR, KC_RCBR, KC_PIPE,
                              _______, _______, _______, _______, _______,  _______, KC_DEL, _______
 ),
 /* RAISE
